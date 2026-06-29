@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Carolina Vasconcelos — Product Manager & Product Designer for data-driven SaaS platforms." />
+  <title>Carolina Vasconcelos · Product Portfolio</title>
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --surface: #ffffff;
+      --surface-soft: #fbfbfd;
+      --text: #111111;
+      --muted: #6e6e73;
+      --muted-2: #86868b;
+      --line: rgba(0, 0, 0, 0.08);
+      --line-strong: rgba(0, 0, 0, 0.14);
+      --accent: #0071e3;
+      --accent-dark: #004f9f;
+      --green: #18a058;
+      --orange: #c86b1f;
+      --purple: #7057ff;
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --shadow-soft: 0 18px 60px rgba(0, 0, 0, 0.08);
+      --shadow-card: 0 12px 34px rgba(0, 0, 0, 0.06);
+      --max: 1180px;
+      --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: saturate(180%) blur(18px);
+      -webkit-backdrop-filter: saturate(180%) blur(18px);
+      background: rgba(245, 245, 247, 0.74);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+    }
+
+    .brand {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 20px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(0, 113, 227, 0.22);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.86);
+      color: var(--text);
+      border-color: var(--line);
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+
+    .hero {
+      min-height: calc(100vh - 56px);
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 44px;
+      align-items: center;
+      padding: 78px 22px 72px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 750;
+      letter-spacing: 0.01em;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      letter-spacing: -0.055em;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 94px);
+      line-height: 0.96;
+      max-width: 820px;
+    }
+
+    .hero-copy {
+      margin-top: 28px;
+      max-width: 710px;
+      font-size: clamp(19px, 2vw, 24px);
+      color: #424245;
+      line-height: 1.35;
+      letter-spacing: -0.025em;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.78);
+      color: #3a3a3c;
+      font-size: 13px;
+      font-weight: 620;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-visual {
+      min-height: 560px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .orb {
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.98), rgba(0, 113, 227, 0.15) 38%, rgba(112, 87, 255, 0.18) 72%, rgba(255,255,255,0.2));
+      filter: blur(0.2px);
+      box-shadow: inset -40px -40px 120px rgba(0, 0, 0, 0.06), 0 28px 90px rgba(0, 0, 0, 0.08);
+    }
+
+    .floating-card {
+      position: absolute;
+      width: 260px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .floating-card h4 {
+      font-size: 15px;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .floating-card p {
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .card-a { top: 42px; left: 10px; }
+    .card-b { right: 0; top: 185px; }
+    .card-c { left: 72px; bottom: 42px; }
+
+    .section {
+      padding: 98px 0;
+    }
+
+    .section-header {
+      max-width: 820px;
+      margin-bottom: 44px;
+    }
+
+    .section-kicker {
+      font-size: 15px;
+      font-weight: 760;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(38px, 5vw, 70px);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .section-lead {
+      font-size: clamp(18px, 2vw, 23px);
+      line-height: 1.4;
+      letter-spacing: -0.02em;
+      color: #424245;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .card.large {
+      padding: 34px;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-card);
+    }
+
+    .card h3 {
+      font-size: 26px;
+      line-height: 1.08;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+    }
+
+    .metric-card {
+      min-height: 190px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.92)),
+        radial-gradient(circle at 100% 0%, rgba(0, 113, 227, 0.12), transparent 48%);
+    }
+
+    .metric-label {
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 760;
+    }
+
+    .metric-title {
+      font-size: 24px;
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+      margin-top: 22px;
+      font-weight: 760;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .work-card {
+      min-height: 370px;
+      padding: 34px;
+      border-radius: var(--radius-xl);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .work-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -70px -100px auto;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      background: rgba(0, 113, 227, 0.10);
+    }
+
+    .work-card:nth-child(2)::after { background: rgba(112, 87, 255, 0.11); }
+    .work-card:nth-child(3)::after { background: rgba(24, 160, 88, 0.10); }
+    .work-card:nth-child(4)::after { background: rgba(200, 107, 31, 0.12); }
+
+    .work-type {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 760;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    .work-card h3 {
+      max-width: 450px;
+      font-size: clamp(28px, 3vw, 42px);
+      line-height: 0.98;
+      margin-bottom: 16px;
+    }
+
+    .work-card p {
+      max-width: 500px;
+      font-size: 16px;
+    }
+
+    .work-footer {
+      margin-top: 38px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+    }
+
+    .mini-pill {
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: #f5f5f7;
+      color: #424245;
+      font-size: 12px;
+      font-weight: 680;
+      border: 1px solid var(--line);
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: 0.88fr 1.12fr;
+      gap: 18px;
+    }
+
+    .timeline-list {
+      background: #111;
+      color: white;
+      border-radius: var(--radius-xl);
+      padding: 34px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 20px;
+      padding: 22px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.14);
+    }
+
+    .timeline-item:last-child {
+      border-bottom: 0;
+    }
+
+    .timeline-year {
+      color: rgba(255,255,255,0.58);
+      font-weight: 760;
+      font-size: 14px;
+    }
+
+    .timeline-text h3 {
+      color: white;
+      font-size: 20px;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .timeline-text p {
+      color: rgba(255,255,255,0.68);
+      font-size: 15px;
+    }
+
+    .confidential-note {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .confidential-note h3 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .case-hero {
+      padding: 112px 0 56px;
+      border-top: 1px solid var(--line);
+    }
+
+    .case-hero-card {
+      background: #111;
+      color: white;
+      border-radius: 42px;
+      padding: clamp(34px, 6vw, 74px);
+      min-height: 580px;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 0.85fr;
+      align-items: center;
+      gap: 44px;
+    }
+
+    .case-hero-card::before {
+      content: "";
+      position: absolute;
+      width: 560px;
+      height: 560px;
+      border-radius: 50%;
+      right: -160px;
+      top: -180px;
+      background: radial-gradient(circle, rgba(0,113,227,0.45), rgba(112,87,255,0.22) 48%, transparent 72%);
+    }
+
+    .case-hero-card h2 {
+      color: #fff;
+      font-size: clamp(42px, 6vw, 84px);
+    }
+
+    .case-hero-card p {
+      color: rgba(255,255,255,0.72);
+      font-size: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .case-meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 38px;
+    }
+
+    .case-meta-item {
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 18px;
+      padding: 18px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .case-meta-item span {
+      display: block;
+      font-size: 12px;
+      color: rgba(255,255,255,0.48);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .case-meta-item strong {
+      color: #fff;
+      font-size: 15px;
+      line-height: 1.3;
+      display: block;
+    }
+
+    .platform-map {
+      position: relative;
+      z-index: 2;
+      min-height: 420px;
+    }
+
+    .platform-core {
+      position: absolute;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: rgba(255,255,255,0.96);
+      color: #111;
+      font-weight: 820;
+      letter-spacing: -0.03em;
+      box-shadow: 0 22px 60px rgba(0,0,0,0.28);
+    }
+
+    .node {
+      position: absolute;
+      width: 158px;
+      min-height: 86px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(14px);
+      padding: 14px;
+      color: white;
+      font-size: 13px;
+      font-weight: 720;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.15;
+    }
+
+    .node-1 { left: 0; top: 30px; }
+    .node-2 { right: 4px; top: 28px; }
+    .node-3 { right: 0; bottom: 34px; }
+    .node-4 { left: 2px; bottom: 34px; }
+    .node-5 { left: 50%; transform: translateX(-50%); bottom: -4px; }
+
+    .subsection {
+      padding: 74px 0;
+    }
+
+    .subsection-title {
+      font-size: clamp(34px, 4vw, 56px);
+      margin-bottom: 24px;
+    }
+
+    .challenge-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .challenge-card {
+      min-height: 260px;
+      background: #fff;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--line);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .challenge-number {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #111;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 760;
+      margin-bottom: 22px;
+    }
+
+    .process-flow {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      padding: 34px;
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+    }
+
+    .flow-line {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(150px, 1fr));
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+    }
+
+    .flow-step {
+      min-height: 150px;
+      border-radius: 22px;
+      padding: 18px;
+      background: #f5f5f7;
+      border: 1px solid var(--line);
+      position: relative;
+    }
+
+    .flow-step span {
+      display: block;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 820;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .flow-step strong {
+      display: block;
+      font-size: 18px;
+      letter-spacing: -0.035em;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+
+    .flow-step p {
+      font-size: 13px;
+      line-height: 1.32;
+    }
+
+    .deliverables {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .deliverable {
+      min-height: 126px;
+      border-radius: 22px;
+      padding: 18px;
+      background: #fff;
+      border: 1px solid var(--line);
+      font-weight: 720;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .quote {
+      background: #111;
+      color: #fff;
+      padding: clamp(36px, 6vw, 74px);
+      border-radius: 42px;
+      margin-top: 22px;
+    }
+
+    .quote p {
+      color: rgba(255,255,255,0.86);
+      font-size: clamp(28px, 4vw, 56px);
+      line-height: 1.04;
+      letter-spacing: -0.055em;
+      max-width: 980px;
+    }
+
+    .footer {
+      padding: 82px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 42px;
+      padding: clamp(34px, 6vw, 64px);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .footer-card h2 {
+      font-size: clamp(34px, 4.8vw, 68px);
+      margin-bottom: 16px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .case-hero-card,
+      .timeline,
+      .footer-card {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 470px;
+      }
+
+      .grid-3,
+      .challenge-grid,
+      .work-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .deliverables {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .case-meta {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .hero {
+        padding-top: 52px;
+      }
+
+      .card-a { top: 12px; left: 0; }
+      .card-b { right: 0; top: 176px; }
+      .card-c { left: 16px; bottom: 8px; }
+
+      .floating-card {
+        width: 220px;
+      }
+
+      .orb {
+        width: 310px;
+        height: 310px;
+      }
+
+      .deliverables {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .platform-map {
+        min-height: 500px;
+      }
+
+      .node {
+        width: 140px;
+      }
+
+      .node-1 { left: 0; top: 0; }
+      .node-2 { right: 0; top: 90px; }
+      .node-3 { right: 0; bottom: 80px; }
+      .node-4 { left: 0; bottom: 70px; }
+      .node-5 { bottom: -8px; }
+
+      .platform-core {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#home">Carolina Vasconcelos</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#case-platform">Case study</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home">
+    <section class="hero container">
+      <div>
+        <div class="eyebrow">Product Manager · Product Designer · Frontend-minded</div>
+        <h1>Designing data-driven products that make complexity actionable.</h1>
+        <p class="hero-copy">
+          I help teams turn complex data, mobility challenges and business needs into clear product experiences,
+          scalable workflows and better decisions.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View selected work</a>
+          <a class="btn btn-secondary" href="#contact">Contact me</a>
+        </div>
+        <div class="hero-meta">
+          <span class="pill">Product strategy</span>
+          <span class="pill">Complex B2B UX</span>
+          <span class="pill">Data products</span>
+          <span class="pill">Technical fluency</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb"></div>
+        <div class="floating-card card-a">
+          <h4>Product clarity</h4>
+          <p>Roadmaps, backlogs, user stories and release-ready documentation.</p>
+        </div>
+        <div class="floating-card card-b">
+          <h4>Decision-support UX</h4>
+          <p>Dashboards, maps and workflows designed around what users need to decide.</p>
+        </div>
+        <div class="floating-card card-c">
+          <h4>Frontend-minded design</h4>
+          <p>Product flows and prototypes that are realistic to build and easier to hand off.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">About</div>
+          <h2>From frontend engineering to product leadership.</h2>
+          <p class="section-lead">
+            My career sits at the intersection of Product Management, Product Design and Frontend Engineering.
+            I care about structure, feasibility, clarity and the details that make a product actually work.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-year">2021 — 2024</div>
+              <div class="timeline-text">
+                <h3>SaaS frontend & data visualization</h3>
+                <p>Built product experiences focused on location intelligence, mobility analytics and client-facing demos.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2024 — 2026</div>
+              <div class="timeline-text">
+                <h3>UX/UI leadership for enterprise mobility systems</h3>
+                <p>Led interface definition, design alignment and modernization work for confidential operational products.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2026 — Present</div>
+              <div class="timeline-text">
+                <h3>Product Management for a multi-product SaaS platform</h3>
+                <p>Own functional product direction across data-driven products, from discovery and backlog to releases and demos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="confidential-note">
+            <div>
+              <h3>Confidential by design.</h3>
+              <p>
+                Some of my work has been developed in confidential corporate environments. This portfolio uses anonymised company
+                references, generic product names, recreated visuals and fictional data where needed.
+              </p>
+            </div>
+            <p style="margin-top: 28px;">
+              The product thinking, process, decisions and outcomes are based on real work, but no confidential interfaces,
+              client data or internal documentation are shown.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="what-i-bring">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">What I bring</div>
+          <h2>A hybrid profile for complex products.</h2>
+          <p class="section-lead">
+            I can move across the full product conversation: business goals, user experience, technical feasibility,
+            roadmap, delivery and implementation quality.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card large">
+            <h3>Product vision and functional ownership</h3>
+            <p>I define and validate product functionalities, structure roadmaps, prioritise backlogs and translate business ambition into clear execution.</p>
+          </article>
+          <article class="card large">
+            <h3>Product design for complex systems</h3>
+            <p>I design journeys, dashboards, maps, forms, workflows and decision-support experiences for products with dense data and multiple user needs.</p>
+          </article>
+          <article class="card large">
+            <h3>Technical fluency</h3>
+            <p>My frontend background helps me work closely with developers, challenge feasibility and design solutions that are realistic to build.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Selected work</div>
+          <h2>Product work across SaaS, mobility and operational systems.</h2>
+          <p class="section-lead">
+            A curated set of anonymised case studies showing product management, product design, data visualization and delivery alignment.
+          </p>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card">
+            <div>
+              <div class="work-type">Case Study 01</div>
+              <h3>Multi-Product Mobility Intelligence SaaS Platform</h3>
+              <p>Product management across a growing ecosystem of data-driven products for location intelligence, mobility analytics, transit performance and shared mobility operations.</p>
+            </div>
+            <div class="work-footer">
+              <span class="mini-pill">Product Management</span>
+              <span class="mini-pill">Platform strategy</span>
+              <span class="mini-pill">UX consistency</span>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div>
+              <div class="work-type">Case Study 02</div>
+              <h3>Transit Performance Analytics</h3>
+              <p>A public transport analytics product helping users diagnose demand, occupancy, punctuality and operational performance through dashboards, maps and service indicators.</p>
+            </div>
+            <div class="work-footer">
+              <span class="mini-pill">Product Design</span>
+              <span class="mini-pill">Mobility analytics</span>
+              <span class="mini-pill">Dashboards</span>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div>
+              <div class="work-type">Case Study 03</div>
+              <h3>Location Intelligence for Retail Expansion</h3>
+              <p>A SaaS product helping retail teams transform mobility, population, competition and sales data into decisions about store location and commercial strategy.</p>
+            </div>
+            <div class="work-footer">
+              <span class="mini-pill">Location intelligence</span>
+              <span class="mini-pill">SaaS</span>
+              <span class="mini-pill">Data visualization</span>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div>
+              <div class="work-type">Case Study 04</div>
+              <h3>Confidential Operational HMI</h3>
+              <p>A recreated case study about modernising a complex enterprise mobility interface, aligning operational UX, requirements and frontend architecture.</p>
+            </div>
+            <div class="work-footer">
+              <span class="mini-pill">Enterprise UX</span>
+              <span class="mini-pill">HMI</span>
+              <span class="mini-pill">Legacy modernization</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-hero" id="case-platform">
+      <div class="container">
+        <div class="case-hero-card">
+          <div>
+            <div class="eyebrow">Case Study 01</div>
+            <h2>Multi-Product Mobility Intelligence SaaS Platform</h2>
+            <p>
+              Product management across a data-driven SaaS ecosystem, creating clarity between product vision,
+              UX decisions and development execution.
+            </p>
+
+            <div class="case-meta">
+              <div class="case-meta-item">
+                <span>Role</span>
+                <strong>Product Manager</strong>
+              </div>
+              <div class="case-meta-item">
+                <span>Timeline</span>
+                <strong>2026 — Present</strong>
+              </div>
+              <div class="case-meta-item">
+                <span>Context</span>
+                <strong>Confidential mobility intelligence SaaS company</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="platform-map" aria-label="Abstract platform map">
+            <div class="platform-core">SaaS<br/>Platform</div>
+            <div class="node node-1">Location<br/>Intelligence</div>
+            <div class="node node-2">Mobility Demand<br/>Insights</div>
+            <div class="node node-3">Population<br/>Analytics</div>
+            <div class="node node-4">Transit Performance<br/>Analytics</div>
+            <div class="node node-5">Shared Mobility<br/>Operations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subsection">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">The platform</div>
+          <h2>A product ecosystem for data-driven decisions.</h2>
+          <p class="section-lead">
+            The platform integrates products with different use cases but a shared goal: helping organisations turn complex mobility,
+            population, retail and operational data into better decisions.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Location Intelligence</h3>
+            <p>Supports retail site planning, catchment analysis, sales forecasting and competition analysis.</p>
+          </article>
+          <article class="card">
+            <h3>Mobility Demand Insights</h3>
+            <p>Generates origin-destination matrices and transport demand indicators from anonymised mobile data.</p>
+          </article>
+          <article class="card">
+            <h3>Population Analytics</h3>
+            <p>Analyses presence, footfall, population profiles and behavioural patterns across geographic areas.</p>
+          </article>
+          <article class="card">
+            <h3>Transit Performance Analytics</h3>
+            <p>Combines ticketing, vehicle location and passenger counting data to monitor demand and service quality.</p>
+          </article>
+          <article class="card">
+            <h3>Shared Mobility Operations</h3>
+            <p>Helps plan and manage shared mobility services through demand forecasting and operational optimisation.</p>
+          </article>
+          <article class="card">
+            <h3>Platform layer</h3>
+            <p>Creates shared product logic, documentation, workflows and demo narratives across the ecosystem.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="subsection">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">The challenge</div>
+          <h2>Growth created complexity.</h2>
+          <p class="section-lead">
+            The opportunity was not just to improve isolated screens, but to create a clearer product operating model across products.
+          </p>
+        </div>
+
+        <div class="challenge-grid">
+          <article class="challenge-card">
+            <div>
+              <div class="challenge-number">1</div>
+              <h3>Dispersed backlog</h3>
+            </div>
+            <p>Product needs, functional decisions and priorities were spread across different workstreams, making shared understanding harder.</p>
+          </article>
+          <article class="challenge-card">
+            <div>
+              <div class="challenge-number">2</div>
+              <h3>Difficult demos</h3>
+            </div>
+            <p>Client-facing demos required significant preparation effort because flows and key messages were not always reusable.</p>
+          </article>
+          <article class="challenge-card">
+            <div>
+              <div class="challenge-number">3</div>
+              <h3>UX inconsistencies</h3>
+            </div>
+            <p>Different products had evolved with different interaction patterns, levels of detail and design logic.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="subsection">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">My role</div>
+          <h2>From ambiguity to execution.</h2>
+          <p class="section-lead">
+            My ownership is mainly product and functional, not purely technical or commercial. I work across roadmap,
+            discovery, requirements, documentation, client understanding and demos.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card large metric-card">
+            <div class="metric-label">Product ownership</div>
+            <div class="metric-title">Translating user and business needs into backlog items, epics, user stories and release-ready documentation.</div>
+          </article>
+          <article class="card large metric-card">
+            <div class="metric-label">Team alignment</div>
+            <div class="metric-title">Coordinating functional decisions between Product Owners, Product Managers, development teams and clients.</div>
+          </article>
+          <article class="card large metric-card">
+            <div class="metric-label">Demo readiness</div>
+            <div class="metric-title">Supporting presales through clearer demos, product presentations and reusable narratives.</div>
+          </article>
+          <article class="card large metric-card">
+            <div class="metric-label">UX consistency</div>
+            <div class="metric-title">Helping teams translate ideas into UX/UI-ready product flows closer to expected implementation.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="subsection">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Product design operating flow</div>
+          <h2>Creating a shared language between PM, UX/UI and development.</h2>
+          <p class="section-lead">
+            I introduced a more structured product design flow to make early product thinking more consumable, actionable and aligned before implementation.
+          </p>
+        </div>
+
+        <div class="process-flow">
+          <div class="flow-line">
+            <div class="flow-step">
+              <span>01</span>
+              <strong>Context</strong>
+              <p>Clarify product area, business objective, user need and functional scope.</p>
+            </div>
+            <div class="flow-step">
+              <span>02</span>
+              <strong>Persona</strong>
+              <p>Define who the user is and what they are trying to achieve.</p>
+            </div>
+            <div class="flow-step">
+              <span>03</span>
+              <strong>Friction points</strong>
+              <p>Identify where the current flow is unclear, slow or inconsistent.</p>
+            </div>
+            <div class="flow-step">
+              <span>04</span>
+              <strong>Product POV</strong>
+              <p>Translate the PM/PO perspective into a brief UX/UI can consume.</p>
+            </div>
+            <div class="flow-step">
+              <span>05</span>
+              <strong>Wireframe alignment</strong>
+              <p>Bring prototypes closer to the expected development outcome.</p>
+            </div>
+            <div class="flow-step">
+              <span>06</span>
+              <strong>Measurement</strong>
+              <p>Define how the redesigned flow should be evaluated after implementation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subsection">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Deliverables</div>
+          <h2>Making product decisions tangible.</h2>
+          <p class="section-lead">
+            The work produced practical outputs that improved product clarity, delivery expectations and demo quality.
+          </p>
+        </div>
+
+        <div class="deliverables">
+          <div class="deliverable">User stories</div>
+          <div class="deliverable">Wireframes</div>
+          <div class="deliverable">Release notes</div>
+          <div class="deliverable">Product presentations</div>
+          <div class="deliverable">Demo narratives</div>
+          <div class="deliverable">Functional documentation</div>
+          <div class="deliverable">UX/UI briefs</div>
+          <div class="deliverable">Measurement criteria</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subsection">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Impact</div>
+          <h2>Less friction, clearer product direction.</h2>
+          <p class="section-lead">
+            The impact is mainly reflected in product clarity, team alignment, handoff quality and delivery confidence.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card large">
+            <h3>Reduced cross-team friction</h3>
+            <p>Clearer documentation, user stories, product flows and decision structures reduced ambiguity between product, UX/UI and development.</p>
+          </article>
+          <article class="card large">
+            <h3>Improved demo readiness</h3>
+            <p>Reusable demo narratives and clearer product flows made it easier to prepare client-facing presentations and explain platform value.</p>
+          </article>
+          <article class="card large">
+            <h3>More consistent UX direction</h3>
+            <p>The product design flow helped teams express context, personas, friction points and expected outcomes in a more usable format.</p>
+          </article>
+          <article class="card large">
+            <h3>Stronger product-to-development alignment</h3>
+            <p>Bringing prototypes closer to development expectations reduced interpretation gaps and improved product handoff quality.</p>
+          </article>
+        </div>
+
+        <div class="quote">
+          <p>A good product flow is not only a set of screens. It is a shared understanding of the user, the problem, the business goal, the technical constraints and the decision the product needs to support.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="principles">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Design principles</div>
+          <h2>How I approach product work.</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Start from the decision</h3>
+            <p>Before screens, I clarify what the user needs to decide and what information supports that decision.</p>
+          </article>
+          <article class="card">
+            <h3>Structure complexity</h3>
+            <p>I turn dense data, workflows and constraints into clear flows and information architecture.</p>
+          </article>
+          <article class="card">
+            <h3>Design systems, not screens</h3>
+            <p>I look for reusable patterns that improve consistency and scalability across products.</p>
+          </article>
+          <article class="card">
+            <h3>Treat data visualization as UX</h3>
+            <p>Charts, maps and KPIs need to be part of a decision journey, not isolated visual elements.</p>
+          </article>
+          <article class="card">
+            <h3>Balance value and feasibility</h3>
+            <p>My technical background helps me design with business value, user needs and engineering constraints in mind.</p>
+          </article>
+          <article class="card">
+            <h3>Create alignment early</h3>
+            <p>Strong product outcomes start with shared context before design and implementation are fixed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-card">
+          <div>
+            <h2>Let’s talk.</h2>
+            <p>
+              I’m interested in Product Manager and Product Designer roles focused on SaaS, mobility, data products,
+              design systems and complex digital tools.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a class="btn btn-primary" href="mailto:cavacaaz@gmail.com">Email me</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/carolinavasconceloscastro/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
