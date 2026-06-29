@@ -1,10 +1,11 @@
-# Product Portfolio V2
+# Product Portfolio V3
 
-Updated static portfolio for Carolina Vasconcelos.
+Cleaned portfolio update.
 
-Includes:
-- Home, About and Selected Work
-- Case Study 01: Multi-Product Mobility Intelligence SaaS Platform
-- Case Study 02: Alarm Center for Transport Network Management
+Changes:
+- Alarm Center case study renamed without numbering
+- Light visuals shown one at a time for higher readability
+- Dark mode full screen moved to the end as a visual exploration
+- Copy simplified to be more concrete and less marketing-led
 
 Publish with GitHub Pages from the repository root.

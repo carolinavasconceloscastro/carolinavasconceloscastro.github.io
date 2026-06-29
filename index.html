@@ -1048,6 +1048,186 @@
         height: 150px;
       }
     }
+  
+    /* Transport case V3 refinement */
+    .transport-case.v3 {
+      padding-top: 84px;
+      border-top: 1px solid var(--line);
+    }
+
+    .v3 .case-intro-card p + p,
+    .v3 .case-note-card p + p {
+      margin-top: 14px;
+    }
+
+    .v3-intro {
+      margin-bottom: 34px;
+    }
+
+    .drilldown-steps.clean {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .single-module-stack {
+      display: grid;
+      gap: 42px;
+      margin-top: 42px;
+    }
+
+    .module-showcase {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      padding: clamp(24px, 4vw, 44px);
+      box-shadow: var(--shadow-card);
+      display: grid;
+      grid-template-columns: 0.78fr 1.22fr;
+      gap: clamp(24px, 4vw, 44px);
+      align-items: center;
+    }
+
+    .module-showcase:nth-child(even) {
+      grid-template-columns: 1.22fr 0.78fr;
+    }
+
+    .module-showcase:nth-child(even) .module-copy {
+      order: 2;
+    }
+
+    .module-showcase:nth-child(even) .large-visual {
+      order: 1;
+    }
+
+    .module-kicker {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 780;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .module-showcase .module-copy h3 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .module-showcase .module-copy p {
+      font-size: 18px;
+      color: #424245;
+      letter-spacing: -0.015em;
+    }
+
+    .module-showcase .module-copy ul {
+      margin: 22px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .module-showcase .module-copy li {
+      margin-bottom: 10px;
+      line-height: 1.55;
+    }
+
+    .large-visual {
+      margin: 0;
+      background: #f7f8fa;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 18px 54px rgba(0, 0, 0, 0.08);
+    }
+
+    .large-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .large-visual.narrow {
+      max-width: 560px;
+      justify-self: center;
+    }
+
+    .dark-mode-block {
+      margin-top: 64px;
+      background: #0a0c10;
+      color: #fff;
+      border-radius: 42px;
+      padding: clamp(26px, 5vw, 54px);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 22px 80px rgba(0, 0, 0, 0.18);
+    }
+
+    .dark-mode-copy {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .dark-mode-copy h3 {
+      color: #fff;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 0.98;
+      margin-bottom: 16px;
+    }
+
+    .dark-mode-copy p {
+      color: rgba(255,255,255,0.70);
+      font-size: 18px;
+    }
+
+    .dark-mode-figure {
+      margin: 0;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: #000;
+    }
+
+    .dark-mode-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .simple-reflection {
+      margin-top: 28px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      padding: clamp(28px, 5vw, 46px);
+    }
+
+    .simple-reflection h3 {
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .simple-reflection p {
+      max-width: 900px;
+      font-size: 19px;
+      color: #424245;
+      letter-spacing: -0.015em;
+    }
+
+    @media (max-width: 980px) {
+      .module-showcase,
+      .module-showcase:nth-child(even) {
+        grid-template-columns: 1fr;
+      }
+
+      .module-showcase:nth-child(even) .module-copy,
+      .module-showcase:nth-child(even) .large-visual {
+        order: initial;
+      }
+
+      .drilldown-steps.clean {
+        grid-template-columns: 1fr;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -1196,7 +1376,7 @@
         <div class="work-grid">
           <article class="work-card">
             <div>
-              <div class="work-type">Case Study 01</div>
+              <div class="work-type">Platform case</div>
               <h3>Multi-Product Mobility Intelligence SaaS Platform</h3>
               <p>Product management across a growing ecosystem of data-driven products for location intelligence, mobility analytics, transit performance and shared mobility operations.</p>
             </div>
@@ -1209,7 +1389,7 @@
 
           <article class="work-card">
             <div>
-              <div class="work-type">Case Study 02</div>
+              <div class="work-type">Product design case</div>
               <h3>Alarm Center for Transport Network Management</h3>
               <p>An anonymised WiseTransit case study showing how alert summary, operational triage and alert detail can work together as a drill-down flow for transport network management.</p>
             </div>
@@ -1222,7 +1402,7 @@
 
           <article class="work-card">
             <div>
-              <div class="work-type">Case Study 03</div>
+              <div class="work-type">Product case</div>
               <h3>Location Intelligence for Retail Expansion</h3>
               <p>A SaaS product helping retail teams transform mobility, population, competition and sales data into decisions about store location and commercial strategy.</p>
             </div>
@@ -1235,7 +1415,7 @@
 
           <article class="work-card">
             <div>
-              <div class="work-type">Case Study 04</div>
+              <div class="work-type">Enterprise case</div>
               <h3>Confidential Operational HMI</h3>
               <p>A recreated case study about modernising a complex enterprise mobility interface, aligning operational UX, requirements and frontend architecture.</p>
             </div>
@@ -1253,7 +1433,7 @@
       <div class="container">
         <div class="case-hero-card">
           <div>
-            <div class="eyebrow">Case Study 01</div>
+            <div class="eyebrow">Platform case</div>
             <h2>Multi-Product Mobility Intelligence SaaS Platform</h2>
             <p>
               Product management across a data-driven SaaS ecosystem, creating clarity between product vision,
@@ -1502,211 +1682,143 @@
     </section>
 
     
-    <section class="section transport-case" id="case-alert">
+    
+    <section class="section transport-case v3" id="case-alert">
       <div class="container">
         <div class="section-header">
-          <div class="section-kicker">Case Study 02</div>
+          <div class="section-kicker">Product design case</div>
           <h2>Alarm Center for Transport Network Management.</h2>
           <p class="section-lead">
-            An anonymised WiseTransit case study focused on operational incidents. The goal was to design a drill-down flow
-            that helps transport supervisors move from line-level monitoring to alert prioritisation and evidence-based diagnosis.
+            An anonymised WiseTransit case focused on operational incidents. I used recreated visuals and fictional data to show the interaction model without exposing the original product.
           </p>
         </div>
 
-        <div class="case-intro-grid">
+        <div class="case-intro-grid v3-intro">
           <article class="case-intro-card">
-            <h3>From monitoring to action.</h3>
+            <h3>What I was trying to solve</h3>
             <p>
-              Transport operations teams often need to review many lines, directions, day types and time periods. The challenge
-              is not only to visualise issues, but to understand <strong>where to act first</strong>, <strong>which alert is relevant</strong>
-              and <strong>what evidence supports the next decision</strong>.
+              Transport teams can have many lines, directions and periods to review. The question is not only “what happened?” but “where should I look first?”.
+            </p>
+            <p>
+              The Alarm Center was structured as a simple drill-down: start with the affected lines, move into the alerts for a selected line, and then open the evidence behind one alert.
             </p>
             <div class="tag-row">
               <span class="tag">Anonymised WiseTransit</span>
               <span class="tag">Operational incidents</span>
-              <span class="tag">Public transport analytics</span>
               <span class="tag">Recreated visuals</span>
-            </div>
-
-            <ul class="case-bullets">
-              <li>Main user: a transport planning or service quality supervisor.</li>
-              <li>Primary goal: detect relevant issues, prioritise alerts and understand what is happening before taking action.</li>
-              <li>Design focus: line-level summary, operational queue and evidence-rich detail view.</li>
-            </ul>
-
-            <div class="drilldown-steps">
-              <div class="step-card">
-                <span>01</span>
-                <strong>Scan the network</strong>
-                <p>Identify which lines deserve attention first.</p>
-              </div>
-              <div class="step-card">
-                <span>02</span>
-                <strong>Prioritise alerts</strong>
-                <p>Use severity, type and impact to sort the queue.</p>
-              </div>
-              <div class="step-card">
-                <span>03</span>
-                <strong>Inspect evidence</strong>
-                <p>Open detail and understand when and where the issue concentrates.</p>
-              </div>
-              <div class="step-card">
-                <span>04</span>
-                <strong>Decide next action</strong>
-                <p>Dismiss, review or open a deeper analysis with context preserved.</p>
-              </div>
+              <span class="tag">Fictional data</span>
             </div>
           </article>
 
           <article class="case-note-card">
-            <h3>Visual direction.</h3>
+            <h3>User and flow</h3>
             <p>
-              For the portfolio, I intentionally moved away from the original product UI and explored a darker, more operational
-              visual language. This helps anonymise the work while also showing how the same interaction model can support two distinct looks:
-              a cleaner light mode and a darker command-center style exploration.
+              The main user is a transport planning or service quality supervisor. This person does not need another isolated dashboard; they need a clear way to detect, prioritise and investigate issues.
             </p>
-            <div class="transport-kpis">
-              <div class="transport-kpi">
-                <div class="label">Design challenge</div>
-                <strong>Make alerts actionable</strong>
-                <p>Transform performance signals into a workflow that supports triage and investigation.</p>
+            <div class="drilldown-steps clean">
+              <div class="step-card">
+                <span>01</span>
+                <strong>Line summary</strong>
+                <p>Which line needs attention?</p>
               </div>
-              <div class="transport-kpi">
-                <div class="label">Information model</div>
-                <strong>Three levels of drill-down</strong>
-                <p>Line summary → operational alerts → alert detail.</p>
+              <div class="step-card">
+                <span>02</span>
+                <strong>Alert list</strong>
+                <p>Which alert should I review first?</p>
               </div>
-              <div class="transport-kpi">
-                <div class="label">Portfolio angle</div>
-                <strong>Show product thinking, not only UI</strong>
-                <p>Each module is explained individually to highlight structure and decisions.</p>
+              <div class="step-card">
+                <span>03</span>
+                <strong>Alert detail</strong>
+                <p>What evidence explains the issue?</p>
               </div>
-            </div>
-            <div class="module-divider">
-              <p>
-                Below, the three core modules are shown in both <strong>light mode</strong> and <strong>dark exploration</strong>,
-                focusing on the actual product components rather than the surrounding navigation chrome.
-              </p>
+              <div class="step-card">
+                <span>04</span>
+                <strong>Next action</strong>
+                <p>Dismiss, review or open analysis.</p>
+              </div>
             </div>
           </article>
         </div>
 
-        <div class="module-stack">
-          <article class="module-card">
+        <div class="single-module-stack">
+          <article class="module-showcase">
             <div class="module-copy">
-              <h3>01 · Alert summary by line</h3>
+              <div class="module-kicker">Step 01</div>
+              <h3>Alert summary by line</h3>
               <p>
-                This module is the first entry point of the drill-down. Instead of forcing users to open alerts one by one,
-                it lets them compare lines by volume of incidents, dominant issue types and passenger impact.
-              </p>
-              <p>
-                The line becomes the main analytical anchor because operations teams usually reason in terms of service lines before moving into individual alerts.
+                This is the entry point. It lets the user compare lines and understand where incidents are concentrated before opening the alert list.
               </p>
               <ul>
-                <li>Helps detect which line deserves attention first.</li>
-                <li>Connects alert counts with the main issues behind them.</li>
-                <li>Adds impact in passengers to support prioritisation.</li>
-                <li>Keeps the selected line visible when the user filters the rest of the flow.</li>
+                <li>The selected line remains visible.</li>
+                <li>Issue chips show the main problems without forcing the user into detail.</li>
+                <li>Passenger impact helps prioritise attention, not just count alerts.</li>
               </ul>
             </div>
-            <div class="visual-pair">
-              <figure class="visual-figure">
-                <img src="assets/transport/alert_summary_light.png" alt="Light mode alert summary by line" />
-                <figcaption class="visual-caption">
-                  <span class="caption-title">Light mode</span>
-                  A structured table for scanning lines, alert counts, main issues and passenger impact.
-                </figcaption>
-              </figure>
-              <figure class="visual-figure">
-                <img src="assets/transport/alert_summary_dark.png" alt="Dark mode alert summary by line" />
-                <figcaption class="visual-caption">
-                  <span class="caption-title">Dark exploration</span>
-                  A more operational look and feel, with stronger emphasis on contrast, chips and selected state.
-                </figcaption>
-              </figure>
-            </div>
+            <figure class="large-visual">
+              <img src="assets/transport/alert_summary_light.png" alt="Alert summary by line module" />
+            </figure>
           </article>
 
-          <article class="module-card">
+          <article class="module-showcase">
             <div class="module-copy">
-              <h3>02 · Operational alerts</h3>
+              <div class="module-kicker">Step 02</div>
+              <h3>Operational alerts</h3>
               <p>
-                Once a line is selected, the interface becomes a triage queue. Each alert card summarises severity, issue type,
-                time horizon, state and impact, while keeping the available actions close to the decision.
-              </p>
-              <p>
-                The goal is to support quick prioritisation without forcing the user into the detail view for every single item.
+                After selecting a line, the alerts become a working queue. Each card gives enough context to scan, compare and decide whether to open the detail.
               </p>
               <ul>
-                <li>Turns alerts into actionable cards rather than raw rows.</li>
-                <li>Supports scanability through severity chips and compact metadata.</li>
-                <li>Preserves contextual actions such as dismiss, mark reviewed or open analysis.</li>
-                <li>Makes the filtered line explicit so users do not lose context.</li>
+                <li>Severity, category, time horizon and status are visible through chips.</li>
+                <li>The line filter keeps the user oriented.</li>
+                <li>Actions are available from the card: dismiss, open analysis or mark as reviewed.</li>
               </ul>
             </div>
-            <div class="visual-pair">
-              <figure class="visual-figure">
-                <img src="assets/transport/operational_alerts_light.png" alt="Light mode operational alerts" />
-                <figcaption class="visual-caption">
-                  <span class="caption-title">Light mode</span>
-                  Alert cards act as a clear operational queue, balancing readability and actionability.
-                </figcaption>
-              </figure>
-              <figure class="visual-figure">
-                <img src="assets/transport/operational_alerts_dark.png" alt="Dark mode operational alerts" />
-                <figcaption class="visual-caption">
-                  <span class="caption-title">Dark exploration</span>
-                  A darker command-center treatment that makes chips, states and quick actions feel more operational.
-                </figcaption>
-              </figure>
-            </div>
+            <figure class="large-visual">
+              <img src="assets/transport/operational_alerts_light.png" alt="Operational alerts module" />
+            </figure>
           </article>
 
-          <article class="module-card">
+          <article class="module-showcase">
             <div class="module-copy">
-              <h3>03 · Alert detail</h3>
+              <div class="module-kicker">Step 03</div>
+              <h3>Alert detail</h3>
               <p>
-                The detail panel explains why a selected alert matters. It combines a concise narrative with visual evidence:
-                time distribution, affected segments and the stops where the issue is most concentrated.
-              </p>
-              <p>
-                This view was designed around the key questions an operator needs to answer before acting: when does it happen,
-                where is it concentrated and how severe is it?
+                The detail view explains why the alert matters. It brings together a short text summary and the evidence needed to understand the issue.
               </p>
               <ul>
-                <li>Separates the summary layer from the evidence layer.</li>
-                <li>Uses charts and affected segments to support diagnosis, not decoration.</li>
-                <li>Helps connect line-level incidents with concrete operational locations.</li>
-                <li>Maintains navigation between alerts while preserving continuity.</li>
+                <li>The hourly chart shows when the problem is concentrated.</li>
+                <li>The segment line shows where the affected section is.</li>
+                <li>The stop ranking gives a concrete operational reference.</li>
               </ul>
             </div>
-            <div class="visual-pair">
-              <figure class="visual-figure">
-                <img src="assets/transport/alert_detail_light.png" alt="Light mode alert detail" />
-                <figcaption class="visual-caption">
-                  <span class="caption-title">Light mode</span>
-                  Evidence-rich detail focused on clarity, sequencing and explanatory support.
-                </figcaption>
-              </figure>
-              <figure class="visual-figure">
-                <img src="assets/transport/alert_detail_dark.png" alt="Dark mode alert detail" />
-                <figcaption class="visual-caption">
-                  <span class="caption-title">Dark exploration</span>
-                  A darker diagnostic panel that reinforces the sense of focus and operational urgency.
-                </figcaption>
-              </figure>
-            </div>
+            <figure class="large-visual narrow">
+              <img src="assets/transport/alert_detail_light.png" alt="Alert detail module" />
+            </figure>
           </article>
         </div>
 
-        <div class="transport-quote">
+        <section class="dark-mode-block">
+          <div class="dark-mode-copy">
+            <div class="section-kicker">Visual exploration</div>
+            <h3>Dark mode direction</h3>
+            <p>
+              After defining the interaction model, I explored a darker interface direction to move further away from the original product look and make the concept feel more like an operations workspace.
+            </p>
+          </div>
+          <figure class="dark-mode-figure">
+            <img src="assets/transport/alarm_center_dark_mode.png" alt="Dark mode Alarm Center screen" />
+          </figure>
+        </section>
+
+        <div class="simple-reflection">
+          <h3>What this case shows</h3>
           <p>
-            The value of the Alarm Center is not just showing incidents. It is creating a connected drill-down:
-            from line-level monitoring, to alert prioritisation, to evidence-based diagnosis and next action.
+            The relevant design work here is not the navigation or the surrounding product chrome. It is the drill-down logic between three modules:
+            line summary, alert list and alert detail. Together, they help the user move from a broad operational signal to a specific issue and a next action.
           </p>
         </div>
       </div>
     </section>
+
 
 
     <section class="section" id="principles">
