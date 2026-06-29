@@ -1,5 +1,10 @@
-# Product Portfolio
+# Product Portfolio V2
 
-Personal product portfolio for Carolina Vasconcelos.
+Updated static portfolio for Carolina Vasconcelos.
 
-Built as a static HTML site and published with GitHub Pages.
+Includes:
+- Home, About and Selected Work
+- Case Study 01: Multi-Product Mobility Intelligence SaaS Platform
+- Case Study 02: Alarm Center for Transport Network Management
+
+Publish with GitHub Pages from the repository root.
