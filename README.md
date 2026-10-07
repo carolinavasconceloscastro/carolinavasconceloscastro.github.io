@@ -1,8 +1,14 @@
 # Carolina Vasconcelos · Product Manager Portfolio
 
-Personal portfolio for Carolina Vasconcelos, a Product Manager with a software engineering and UX/UI background.
+Personal portfolio for Carolina Vasconcelos, a Product Manager with a software engineering and UX background.
 
-The site positions Carolina around product discovery, roadmap and scope ownership, rapid prototyping, technical trade-offs and close collaboration with engineering. It includes selected anonymised work across B2B SaaS, mobility intelligence, data-heavy products and complex operational systems.
+The site focuses on the way Carolina works across product discovery, rapid prototyping, scope definition, UX judgement, technical trade-offs and close collaboration with engineering. The career timeline intentionally describes capability evolution rather than listing employers.
+
+## Capability timeline
+
+- Nov 2020 – Oct 2023 · Engineering foundation
+- Oct 2023 – Feb 2025 · UX leadership & product thinking
+- Feb 2025 – Present · Product management & discovery
 
 ## Live site
 
@@ -10,18 +16,14 @@ The site positions Carolina around product discovery, roadmap and scope ownershi
 
 ## About
 
-This site is built as a static HTML portfolio and published with GitHub Pages.
-
-Some case studies are based on confidential corporate work. To protect proprietary information, visuals have been recreated, simplified or anonymised, and fictional data is used where needed.
-
-The case studies focus on product thinking, discovery, prototyping, UX decisions, technical constraints and delivery alignment rather than exposing internal product screens or client data.
+This is a static HTML portfolio published with GitHub Pages. Some case studies are based on confidential corporate work, so company references are anonymised and visuals are recreated or simplified where necessary.
 
 ## Structure
 
-* `index.html` — Main portfolio page
-* `assets/` — Visual assets used in the portfolio
+- `index.html` — Main portfolio page
+- `assets/` — Visual assets used in anonymised case studies
 
 ## Contact
 
-* Email: [cavacaaz@gmail.com](mailto:cavacaaz@gmail.com)
-* LinkedIn: [linkedin.com/in/carolinavasconceloscastro](https://www.linkedin.com/in/carolinavasconceloscastro/)
+- Email: [cavacaaz@gmail.com](mailto:cavacaaz@gmail.com)
+- LinkedIn: [linkedin.com/in/carolinavasconceloscastro](https://www.linkedin.com/in/carolinavasconceloscastro/)

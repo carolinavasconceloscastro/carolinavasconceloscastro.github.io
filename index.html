@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Carolina Vasconcelos — Product Manager with a software engineering and UX background, working across discovery, prototyping and delivery for complex digital products." />
+  <meta name="description" content="Carolina Vasconcelos — Product Manager with a software engineering and UX background. Discovery, rapid prototyping, product definition and close engineering collaboration for complex digital products." />
+  <meta name="theme-color" content="#f4f7fb" />
+  <meta property="og:title" content="Carolina Vasconcelos · Product Manager" />
+  <meta property="og:description" content="Product Manager with a software engineering and UX background, working from discovery and prototyping through scope, delivery and iteration." />
   <title>Carolina Vasconcelos · Product Manager</title>
   <style>
     :root {
@@ -1229,17 +1232,249 @@
     }
 
   </style>
+
+<style id="portfolio-refinement-v3">
+  :root{
+    --bg:#f4f7fb;
+    --surface:#ffffff;
+    --surface-soft:#f8fafe;
+    --text:#111827;
+    --muted:#5f6b7a;
+    --muted-2:#7c8798;
+    --line:#e1e7f0;
+    --line-strong:#cbd6e5;
+    --accent:#1a73e8;
+    --accent-dark:#1557b0;
+    --blue-soft:#e8f0fe;
+    --green:#2f8f5b;
+    --green-soft:#e9f6ee;
+    --warm:#b67800;
+    --warm-soft:#fff5d6;
+    --violet:#6750a4;
+    --violet-soft:#f1edfb;
+    --radius-xl:34px;
+    --radius-lg:26px;
+    --radius-md:18px;
+    --shadow-soft:0 24px 70px rgba(16,24,40,.10);
+    --shadow-card:0 12px 34px rgba(16,24,40,.07);
+  }
+
+  body{
+    background:
+      radial-gradient(820px 520px at 88% -6%,rgba(26,115,232,.14),transparent 62%),
+      radial-gradient(620px 420px at -6% 18%,rgba(255,193,7,.10),transparent 62%),
+      linear-gradient(180deg,#ffffff 0%,var(--bg) 46%,#eef3fa 100%);
+  }
+
+  .nav{
+    top:0;
+    padding:14px 18px 0;
+    background:transparent;
+    border:0;
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+  }
+  .nav-inner{
+    width:min(1180px,100%);
+    min-height:54px;
+    height:auto;
+    padding:8px 10px 8px 14px;
+    border:1px solid rgba(203,214,229,.82);
+    border-radius:999px;
+    background:rgba(255,255,255,.84);
+    box-shadow:0 14px 42px rgba(16,24,40,.09);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+  }
+  .brand{display:flex;align-items:center;gap:10px;min-width:0}
+  .brand-dot{
+    width:30px;height:30px;flex:0 0 auto;border-radius:11px;
+    background:linear-gradient(135deg,var(--accent),var(--violet));
+    box-shadow:0 8px 18px rgba(26,115,232,.20);
+    position:relative;
+  }
+  .brand-dot::after{content:"";position:absolute;inset:8px;border-radius:5px;background:#fff;opacity:.92}
+  .brand-copy{display:grid;gap:1px;line-height:1.05}
+  .brand-copy strong{font-size:12px;letter-spacing:.01em;color:var(--text)}
+  .brand-copy small{font-size:10px;color:var(--muted-2);font-weight:650;white-space:nowrap}
+  .nav-links{gap:3px}
+  .nav-links a{padding:8px 11px;border-radius:999px;font-size:12px;font-weight:700}
+  .nav-links a:hover{background:var(--blue-soft);color:var(--accent)}
+  .nav-links .nav-contact{background:#111827;color:#fff;padding-inline:14px}
+  .nav-links .nav-contact:hover{background:#263244;color:#fff}
+
+  main .hero{
+    width:min(1180px,calc(100% - 36px));
+    max-width:none;
+    min-height:680px;
+    margin:18px auto 0;
+    padding:62px 54px;
+    border:1px solid rgba(203,214,229,.82);
+    border-radius:42px;
+    background:
+      linear-gradient(rgba(26,115,232,.055) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(26,115,232,.055) 1px,transparent 1px),
+      radial-gradient(520px 360px at 90% 10%,rgba(26,115,232,.16),transparent 68%),
+      linear-gradient(135deg,rgba(255,255,255,.98),rgba(248,251,255,.96));
+    background-size:56px 56px,56px 56px,auto,auto;
+    box-shadow:var(--shadow-soft);
+    overflow:hidden;
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;width:max-content;max-width:100%;
+    padding:8px 12px;margin-bottom:20px;border:1px solid #cfe0fb;border-radius:999px;
+    background:rgba(255,255,255,.78);color:#1558c0;font-size:11px;font-weight:850;
+    letter-spacing:.09em;text-transform:uppercase;box-shadow:0 8px 24px rgba(16,24,40,.05)
+  }
+  .eyebrow-dots{display:flex;gap:4px}
+  .eyebrow-dots i{display:block;width:6px;height:6px;border-radius:50%}
+  .eyebrow-dots i:nth-child(1){background:var(--accent)}
+  .eyebrow-dots i:nth-child(2){background:#f0b429}
+  .eyebrow-dots i:nth-child(3){background:#34a853}
+  h1{font-size:clamp(48px,6.4vw,84px);line-height:.94;letter-spacing:-.065em;max-width:760px}
+  .hero-copy{max-width:720px;font-size:clamp(18px,1.8vw,23px);line-height:1.48;color:#3f4c5f}
+  .hero-actions{margin-top:30px}
+  .btn{min-height:42px;padding:0 17px;font-size:13px;font-weight:760}
+  .btn-primary{background:#111827;box-shadow:0 10px 24px rgba(17,24,39,.16)}
+  .btn-primary:hover{background:#263244}
+  .btn-secondary{background:rgba(255,255,255,.86);border-color:var(--line-strong)}
+  .hero-meta{margin-top:26px;gap:8px}
+  .pill{padding:8px 11px;border-color:var(--line);background:rgba(255,255,255,.82);font-size:12px;font-weight:720;box-shadow:0 6px 18px rgba(16,24,40,.04)}
+  .location-pill{background:var(--green-soft);border-color:#cfe9d9;color:#246f48}
+
+  .hero-visual{min-height:520px;display:flex;align-items:center;justify-content:center;position:relative}
+  .product-console{
+    width:100%;max-width:430px;padding:18px;border:1px solid rgba(203,214,229,.92);border-radius:32px;
+    background:rgba(255,255,255,.90);box-shadow:0 24px 64px rgba(16,24,40,.14);backdrop-filter:blur(14px)
+  }
+  .console-header{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:5px 4px 16px;border-bottom:1px solid var(--line)}
+  .console-header>div{display:grid;gap:4px}
+  .console-header strong{font-size:18px;letter-spacing:-.025em;line-height:1.15}
+  .console-kicker{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:900}
+  .console-status{display:inline-flex;align-items:center;gap:7px;padding:7px 9px;border-radius:999px;background:var(--green-soft);color:#276b48;font-size:10px;font-weight:820;white-space:nowrap}
+  .console-status i{width:7px;height:7px;border-radius:50%;background:#34a853;box-shadow:0 0 0 4px rgba(52,168,83,.12)}
+  .console-flow{display:grid;gap:8px;padding:14px 0}
+  .flow-step{display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:center;padding:10px 11px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(180deg,#fff,#fbfcff)}
+  .flow-step>span{display:grid;place-items:center;width:30px;height:30px;border-radius:11px;background:var(--blue-soft);color:#1558c0;font-size:10px;font-weight:900}
+  .flow-step:nth-child(2)>span{background:var(--violet-soft);color:var(--violet)}
+  .flow-step:nth-child(3)>span{background:var(--warm-soft);color:#876000}
+  .flow-step:nth-child(4)>span{background:var(--green-soft);color:#2b754c}
+  .flow-step:nth-child(5)>span{background:#f2f4f7;color:#5d6878}
+  .flow-step div{display:grid;gap:1px}
+  .flow-step strong{font-size:13px;letter-spacing:-.01em}
+  .flow-step small{font-size:10.5px;color:var(--muted);font-weight:620}
+  .console-callout{display:grid;grid-template-columns:38px 1fr;gap:11px;align-items:start;padding:13px;border-radius:19px;background:#111827;color:#fff}
+  .console-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:rgba(255,255,255,.11);font-size:12px;font-weight:900}
+  .console-callout strong{display:block;font-size:12.5px;margin-bottom:3px}
+  .console-callout p{color:rgba(255,255,255,.68);font-size:10.5px;line-height:1.45}
+
+  #about,#what-i-bring,#work,#principles{padding:34px 0}
+  #about>.container,#what-i-bring>.container,#work>.container,#principles>.container{
+    padding:38px;border:1px solid rgba(203,214,229,.78);border-radius:38px;background:rgba(255,255,255,.86);
+    box-shadow:0 18px 52px rgba(16,24,40,.075);backdrop-filter:blur(10px)
+  }
+  .section-header{max-width:900px;margin-bottom:30px}
+  .section-kicker{display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;color:#1558c0;font-size:10px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}
+  .section-kicker::before{content:"";width:16px;height:16px;border-radius:6px;background:linear-gradient(135deg,var(--accent),var(--violet));box-shadow:0 6px 14px rgba(26,115,232,.18)}
+  h2{font-size:clamp(36px,4.7vw,62px);letter-spacing:-.055em}
+  .section-lead{max-width:780px;font-size:clamp(17px,1.75vw,21px);line-height:1.48;color:#445064}
+
+  .timeline{grid-template-columns:1fr;gap:14px}
+  .timeline-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:0;background:transparent;color:var(--text);border-radius:0}
+  .timeline-item{position:relative;display:block;padding:22px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(180deg,#fff,#f9fbfe);box-shadow:var(--shadow-card)}
+  .timeline-item::before{content:"";display:block;width:9px;height:9px;margin-bottom:22px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(26,115,232,.11)}
+  .timeline-item:nth-child(2)::before{background:var(--violet);box-shadow:0 0 0 6px rgba(103,80,164,.11)}
+  .timeline-item:nth-child(3)::before{background:#34a853;box-shadow:0 0 0 6px rgba(52,168,83,.11)}
+  .timeline-year{color:var(--muted-2);font-size:11px;font-weight:820;letter-spacing:.03em;margin-bottom:7px}
+  .timeline-text h3{color:var(--text);font-size:19px;line-height:1.1;margin-bottom:9px}
+  .timeline-text p{color:var(--muted);font-size:13.5px;line-height:1.56}
+  .confidential-note{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;padding:20px 22px;border-radius:24px;background:#f7f9fc;box-shadow:none}
+  .confidential-note h3{font-size:17px;margin-bottom:6px;letter-spacing:-.025em}
+  .confidential-note p,.confidential-note p[style]{margin:0 !important;font-size:12.5px;line-height:1.55}
+
+  #what-i-bring .grid-3{gap:12px}
+  #what-i-bring .card.large{position:relative;min-height:220px;padding:24px;border-radius:26px;background:linear-gradient(180deg,#fff,#fbfcff);box-shadow:var(--shadow-card);overflow:hidden}
+  #what-i-bring .card.large::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--accent)}
+  #what-i-bring .card.large:nth-child(2)::before{background:var(--violet)}
+  #what-i-bring .card.large:nth-child(3)::before{background:#34a853}
+  #what-i-bring .card h3{font-size:22px}
+  #what-i-bring .card p{font-size:14px;line-height:1.6}
+
+  .work-grid{gap:14px}
+  .work-card{min-height:330px;padding:26px;border-radius:28px;background:linear-gradient(180deg,#fff,#fafcff);box-shadow:var(--shadow-card);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+  .work-card::after{width:170px;height:170px;right:-70px;bottom:-90px}
+  .work-link{cursor:pointer}
+  .work-link:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(16,24,40,.11);border-color:#c7d8f2}
+  .work-type{color:#1558c0;font-size:10px;letter-spacing:.13em}
+  .work-card h3{font-size:clamp(26px,2.7vw,38px);line-height:1.02}
+  .work-card p{font-size:14px;line-height:1.58}
+  .mini-pill{padding:7px 9px;background:#f7f9fc;font-size:10.5px}
+  .work-arrow{display:inline-flex;margin-top:16px;color:#1558c0;font-size:12px;font-weight:820;position:relative;z-index:2}
+
+  .case-hero-card{border-radius:38px;background:radial-gradient(540px 360px at 88% 10%,rgba(26,115,232,.34),transparent 68%),linear-gradient(135deg,#07111f,#121c2e 62%,#0b1424)}
+  .case-meta-item,.transport-kpi,.metric-card,.card{border-color:var(--line)}
+
+  #principles .grid-3{gap:12px}
+  #principles .card{padding:20px;border-radius:22px;background:linear-gradient(180deg,#fff,#fbfcff);box-shadow:none}
+  #principles .card h3{font-size:18px;letter-spacing:-.025em}
+  #principles .card p{font-size:13px;line-height:1.55}
+
+  .footer{padding:34px 0 48px}
+  .footer-card{border-radius:38px;background:radial-gradient(540px 340px at 85% 20%,rgba(26,115,232,.32),transparent 62%),linear-gradient(135deg,#07111f,#121c2e 62%,#0b1424);box-shadow:var(--shadow-soft)}
+  .footer-card h2{font-size:clamp(38px,5vw,64px)}
+
+  @media (max-width:980px){
+    main .hero{grid-template-columns:1fr;min-height:auto;padding:48px 34px}
+    .hero-visual{min-height:auto}.product-console{max-width:620px}
+    .timeline-list{grid-template-columns:1fr}
+    .confidential-note{grid-template-columns:1fr}
+    #what-i-bring .grid-3{grid-template-columns:1fr}
+  }
+  @media (max-width:760px){
+    .nav{padding:10px 10px 0}.nav-inner{border-radius:24px;padding:9px 10px}.brand-copy small{display:none}
+    .nav-links{gap:0;overflow:auto}.nav-links a{font-size:11px;padding:7px 9px}.nav-links a:nth-child(2),.nav-links a:nth-child(4){display:none}
+    main .hero{width:calc(100% - 20px);padding:34px 22px;border-radius:30px;gap:26px}
+    h1{font-size:clamp(43px,13vw,64px);letter-spacing:-.055em}
+    .hero-copy{font-size:18px}.product-console{padding:14px;border-radius:26px}.console-status{display:none}
+    #about,#what-i-bring,#work,#principles{padding:22px 0}
+    #about>.container,#what-i-bring>.container,#work>.container,#principles>.container{width:calc(100% - 20px);padding:24px 20px;border-radius:30px}
+    .work-grid{grid-template-columns:1fr}
+    .work-card{min-height:auto}
+  }
+</style>
+
+
+<style id="portfolio-mobile-fix">
+  main .hero > *,.hero-visual,.product-console,.console-header,.console-flow{min-width:0}
+  .eyebrow{white-space:normal;overflow-wrap:anywhere}
+  @media (max-width:760px){
+    main .hero{grid-template-columns:minmax(0,1fr)!important}
+    main .hero>div,.hero-visual,.product-console{width:100%;max-width:100%;min-width:0}
+    .eyebrow{width:auto;max-width:100%;font-size:9.5px;line-height:1.35;letter-spacing:.07em}
+    h1{max-width:100%;overflow-wrap:normal;word-break:normal}
+    .hero-copy{max-width:100%}
+    .hero-meta{max-width:100%}
+    .pill{max-width:100%}
+    .product-console{box-sizing:border-box}
+  }
+</style>
 </head>
 <body>
   <nav class="nav">
     <div class="nav-inner">
-      <a class="brand" href="#home">Carolina Vasconcelos</a>
+      <a class="brand" href="#home" aria-label="Carolina Vasconcelos home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <strong>Carolina Vasconcelos</strong>
+          <small>Product Manager · Engineering &amp; UX</small>
+        </span>
+      </a>
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#what-i-bring">Capabilities</a>
         <a href="#work">Work</a>
-        <a href="#case-platform">Platform</a>
-        <a href="#case-alert">Alarm Center</a>
-        <a href="#contact">Contact</a>
+        <a href="#principles">Method</a>
+        <a class="nav-contact" href="#contact">Contact</a>
       </div>
     </div>
   </nav>
@@ -1247,10 +1482,10 @@
   <main id="home">
     <section class="hero container">
       <div>
-        <div class="eyebrow">Product Manager · Software Engineering &amp; UX background</div>
+        <div class="eyebrow"><span class="eyebrow-dots" aria-hidden="true"><i></i><i></i><i></i></span>Product Manager · Software Engineering &amp; UX background</div>
         <h1>Turning complex problems into clear product decisions — and helping teams get them built.</h1>
         <p class="hero-copy">
-          I work across discovery, product definition and delivery — using technical fluency, UX thinking and rapid prototyping to turn ambiguous needs into focused, buildable product scope.
+          I work from discovery to delivery — using technical fluency, UX judgement and rapid prototyping to turn ambiguous needs into focused product decisions and buildable scope.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#work">View selected work</a>
@@ -1258,25 +1493,33 @@
         </div>
         <div class="hero-meta">
           <span class="pill">Product discovery</span>
+          <span class="pill">AI-assisted prototyping</span>
           <span class="pill">B2B SaaS</span>
-          <span class="pill">Rapid prototyping</span>
           <span class="pill">Technical fluency</span>
+          <span class="pill location-pill">Madrid · Open to Europe</span>
         </div>
       </div>
 
-      <div class="hero-visual" aria-hidden="true">
-        <div class="orb"></div>
-        <div class="floating-card card-a">
-          <h4>Product discovery</h4>
-          <p>Frame the problem, understand the user and turn ambiguity into clear hypotheses and priorities.</p>
-        </div>
-        <div class="floating-card card-b">
-          <h4>Rapid prototyping</h4>
-          <p>AI-assisted HTML mockups and product flows to test ideas early and sharpen scope before delivery.</p>
-        </div>
-        <div class="floating-card card-c">
-          <h4>Engineering collaboration</h4>
-          <p>Technical trade-offs, requirements and implementation detail shaped in close partnership with engineers.</p>
+      <div class="hero-visual" aria-label="Product workflow">
+        <div class="product-console">
+          <div class="console-header">
+            <div>
+              <span class="console-kicker">How I work</span>
+              <strong>From ambiguity to something buildable.</strong>
+            </div>
+            <span class="console-status"><i></i> Product + Engineering</span>
+          </div>
+          <div class="console-flow">
+            <div class="flow-step"><span>01</span><div><strong>Discover</strong><small>Problem · users · evidence</small></div></div>
+            <div class="flow-step"><span>02</span><div><strong>Prototype</strong><small>Flows · HTML mockups · hypotheses</small></div></div>
+            <div class="flow-step"><span>03</span><div><strong>Scope</strong><small>Priorities · trade-offs · requirements</small></div></div>
+            <div class="flow-step"><span>04</span><div><strong>Build</strong><small>Engineering · QA · delivery</small></div></div>
+            <div class="flow-step"><span>05</span><div><strong>Learn</strong><small>Metrics · feedback · iteration</small></div></div>
+          </div>
+          <div class="console-callout">
+            <span class="console-icon">&lt;/&gt;</span>
+            <div><strong>Prototype before over-specifying.</strong><p>I often use AI-assisted HTML mockups to make an idea tangible before committing engineering effort.</p></div>
+          </div>
         </div>
       </div>
     </section>
@@ -1287,31 +1530,31 @@
           <div class="section-kicker">About</div>
           <h2>Product management grounded in engineering and UX.</h2>
           <p class="section-lead">
-            I started in software engineering, moved into UX/UI leadership and now work in Product Management. That path lets me move comfortably from problem framing and product flows to technical trade-offs, delivery detail and iteration after launch.
+            My career has moved from hands-on software engineering, through UX leadership, into end-to-end Product Management. Each step added a new layer to the same core skill: understanding complex problems, making them tangible quickly and helping teams decide what is worth building.
           </p>
         </div>
 
         <div class="timeline">
           <div class="timeline-list">
             <div class="timeline-item">
-              <div class="timeline-year">Nov 2020 — Feb 2023</div>
+              <div class="timeline-year">Nov 2020 — Oct 2023</div>
               <div class="timeline-text">
-                <h3>Frontend Developer · Nommon</h3>
-                <p>Built data-heavy SaaS experiences, dashboards and reusable UI in close collaboration with product, backend and data teams.</p>
+                <h3>Engineering foundation</h3>
+                <p>Built and shipped digital products hands-on, developing strong foundations in frontend architecture, APIs, data-heavy interfaces and day-to-day delivery.</p>
               </div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-year">Feb 2023 — Jan 2026</div>
+              <div class="timeline-year">Oct 2023 — Feb 2025</div>
               <div class="timeline-text">
-                <h3>Senior Frontend Developer &amp; UX/UI Lead · Siemens Mobility</h3>
-                <p>Led UX/UI and frontend modernization of a complex operational product, translating system constraints into clear flows, component logic and implementation-ready decisions.</p>
+                <h3>UX leadership &amp; product thinking</h3>
+                <p>Expanded from implementation into UX/UI ownership: product flows, design systems, requirements, user needs and the bridge between design decisions and engineering execution.</p>
               </div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-year">Jan 2026 — Present</div>
+              <div class="timeline-year">Feb 2025 — Present</div>
               <div class="timeline-text">
-                <h3>Product Manager · Nommon</h3>
-                <p>Own discovery, roadmap, product definition and delivery across a multi-product B2B SaaS platform, using rapid prototypes to make ideas tangible before committing engineering scope.</p>
+                <h3>Product management &amp; discovery</h3>
+                <p>Own discovery, roadmap and prioritisation, using rapid AI-assisted HTML prototypes to test ideas, align stakeholders, define scope and work closely with engineering through delivery and iteration.</p>
               </div>
             </div>
           </div>
@@ -1364,16 +1607,16 @@
       <div class="container">
         <div class="section-header">
           <div class="section-kicker">Selected work</div>
-          <h2>Selected product work in complex SaaS and operational systems.</h2>
+          <h2>Selected work across SaaS, data and operational products.</h2>
           <p class="section-lead">
-            A curated set of anonymised case studies showing how I move from problem framing and product definition to UX, prototyping and engineering alignment.
+            A few anonymised examples showing the same working style in different contexts: frame the problem, make it tangible, define the scope and work closely with engineering.
           </p>
         </div>
 
         <div class="work-grid">
-          <article class="work-card">
+          <a class="work-card work-link" href="#case-platform">
             <div>
-              <div class="work-type">Platform case</div>
+              <div class="work-type">Platform case · Deep dive</div>
               <h3>Multi-Product Mobility Intelligence SaaS Platform</h3>
               <p>Product management across a growing ecosystem of data-driven products for location intelligence, mobility analytics, transit performance and shared mobility operations.</p>
             </div>
@@ -1382,11 +1625,12 @@
               <span class="mini-pill">Platform strategy</span>
               <span class="mini-pill">UX consistency</span>
             </div>
-          </article>
+          <span class="work-arrow">View case →</span>
+          </a>
 
-          <article class="work-card">
+          <a class="work-card work-link" href="#case-alert">
             <div>
-              <div class="work-type">Product design case</div>
+              <div class="work-type">Product design case · Deep dive</div>
               <h3>Alarm Center for Transport Network Management</h3>
               <p>An anonymised WiseTransit case study showing how alert summary, operational triage and alert detail can work together as a drill-down flow for transport network management.</p>
             </div>
@@ -1395,7 +1639,8 @@
               <span class="mini-pill">Mobility analytics</span>
               <span class="mini-pill">Dashboards</span>
             </div>
-          </article>
+          <span class="work-arrow">View case →</span>
+          </a>
 
           <article class="work-card">
             <div>
@@ -1443,7 +1688,7 @@
               </div>
               <div class="case-meta-item">
                 <span>Timeline</span>
-                <strong>Jan 2026 — Present</strong>
+                <strong>Feb 2025 — Present</strong>
               </div>
               <div class="case-meta-item">
                 <span>Context</span>
@@ -1858,7 +2103,7 @@
           <div>
             <h2>Let’s talk.</h2>
             <p>
-              I’m interested in Product Manager and Technical Product Manager roles where discovery, UX judgement and close engineering collaboration are part of the day-to-day work — across B2B SaaS, AI-enabled products, platforms and complex digital tools.
+              I’m interested in Product Manager and Technical Product Manager roles where discovery, UX judgement, prototyping and close engineering collaboration are part of the day-to-day work — across B2B SaaS, platforms, AI-enabled workflows and complex digital products.
             </p>
           </div>
           <div class="contact-links">
