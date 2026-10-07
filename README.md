@@ -1,8 +1,8 @@
-# Carolina Vasconcelos · Product Portfolio
+# Carolina Vasconcelos · Product Manager Portfolio
 
-Personal portfolio for Carolina Vasconcelos, focused on Product Management, Product Design and frontend-minded product work.
+Personal portfolio for Carolina Vasconcelos, a Product Manager with a software engineering and UX/UI background.
 
-The portfolio presents selected work across data-driven SaaS platforms, mobility analytics, location intelligence and complex B2B systems.
+The site positions Carolina around product discovery, roadmap and scope ownership, rapid prototyping, technical trade-offs and close collaboration with engineering. It includes selected anonymised work across B2B SaaS, mobility intelligence, data-heavy products and complex operational systems.
 
 ## Live site
 
@@ -14,16 +14,14 @@ This site is built as a static HTML portfolio and published with GitHub Pages.
 
 Some case studies are based on confidential corporate work. To protect proprietary information, visuals have been recreated, simplified or anonymised, and fictional data is used where needed.
 
-The case studies focus on product thinking, UX decisions, workflows and design rationale rather than exposing internal product screens or client data.
+The case studies focus on product thinking, discovery, prototyping, UX decisions, technical constraints and delivery alignment rather than exposing internal product screens or client data.
 
 ## Structure
 
 * `index.html` — Main portfolio page
 * `assets/` — Visual assets used in the portfolio
-* `.nojekyll` — GitHub Pages configuration file
 
 ## Contact
 
 * Email: [cavacaaz@gmail.com](mailto:cavacaaz@gmail.com)
 * LinkedIn: [linkedin.com/in/carolinavasconceloscastro](https://www.linkedin.com/in/carolinavasconceloscastro/)
-
